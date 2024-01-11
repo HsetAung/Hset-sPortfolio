@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --main-color: #00abf0;
+    --text-color: #333;
+    --second-text-color: #555;
+    --white-color: #fff;
+    --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
+    --pages-color: linear-gradient(90deg, #fff, #ddd);
+    --border: 0.125rem solid #00abf0;
+    --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+.home {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    opacity: 0.50; 
+    z-index: -1; 
+    width: 100%;
+}
+
+
+
+.menuBar {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--white-color);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Adjust as needed */
+}
+
+.header-area  {
+ 
+ position: absolute;
+ top: 50%;
+ left: 50%;
+transform:translate(-50%,-50%) ;
+text-align: center;
+    width: 100%;
+   
+  
+  
+   
+    font-family: 'Poppins', sans-serif;
+    font-size:24px;
+    font-weight: bolder;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    color: var(--white-color);
+}
+
+.header-area h2 {
+    color: black;
+    transition: all 0.5s ease; 
+}
+
+.header-area h2 span.green-text {
+    color: darkgreen;
+}
+
+.header-area h2 span.red-text {
+    color: red;
+}
+
+.header-area  div {
+    text-shadow: none;
+    font-weight:normal;
+    font-size:12px;
+    color: red;
+    font-weight: bolder;
+    width: 150px;
+    margin-left: 41%;
+    padding: 5px;
+    border: 1px solid black;
+    border-style: dashed;
+    margin-top: 10px;
+    transition: all 0.5s ease; 
+    margin-top: 40px;
+}
+
+.header-area div:hover {
+    background-color: #081b29;
+    padding: 15px;
+    font-weight: lighter;
+    transform: scale(1.1); 
+    color: #fff;
+}
+
+.down {
+ position: absolute;
+ bottom: 5%;
+ left: 48.2%;
+    text-align: center;
+    animation: bounceUpDown 1.5s infinite;
+}
+
+@keyframes bounceUpDown {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+}
+.about{
+    padding-top: 30px;
+  padding-left: 120px;
+  padding-right: 120px;
+    background-color: white;
+    margin-bottom: 50px;
+   
+}
+.text{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-decoration: underline;
+
+}
+.profile{
+    margin-right: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px gray;
+    height: 380px;
+}
+.aboutInner{
+    display: flex;
+}
+.intro{
+    font-size: 16px;
+    color: dimgray;
+   
+}
+.aboutMore{
+    position: relative;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    
+   
+
+}
+.aboutMoreShadow{
+    position: absolute;
+  
+   
+    top: -15px;
+
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+  color: #fff;
+    background-color: #006e9a;
+    opacity: 0.80;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+  
+   
+}
+.aboutMoreShadow:hover {
+    top: -21px;
+    left: -1px;
+    
+}
+.bio{
+    display: flex;
+    margin-top: 20px;
+    font-size: 16px;
+    color: dimgray;
+
+}
+.rightTitle{
+    width: 100px;
+   
+}
+
+.skill{
+    background-color: dodgerblue;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+   
+
+}
+.skillText{
+    padding-bottom: 20px;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider{
+   display: flex;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width:80%
+}
+.slider .slide-track{
+    -webkit-animation: scroll 15s linear infinite ;
+    animation: scroll 15s linear infinite ;
+    display: flex;
+    width: calc(150px * 7);
+   
+}
+.slider .slide{
+   
+   height: 100px;
+   width: 150px;
+}
+.slider .slide img{
+   
+    width:80px;
+    height: 70px;
+    object-fit: cover;
+   border-radius: 5px;
+    
+   
+   
+}
+
+@-webkit-keyframes scroll{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-150px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-150px * 7));
+    }
+}
+
+.project {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: white;
+}
+
+.project_text {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.project .project_item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.pj1, .pj2, .pj3 {
+    position: relative;
+    width: 250px;
+    transition: all 0.5s ease;
+   
+    margin-right: 20px;
+}
+
+.pj1:hover, .pj2:hover, .pj3:hover {
+    text-align: center;
+    width: 250px;
+   
+    border-radius: 20px;
+    transform: scale(1.1);
+}
+
+.pjImg1, .pjImg2, .pjImg3 {
+    width: 250px;
+}
+
+
+.pj1:hover,.pj2:hover,.pj3:hover{
+    text-align:center ;
+    width: 250px;
+    background-color: seashell;
+    border-radius: 20px;
+    transform: scale(1.1); 
+ }
+
+.pjImg1,.pjImg2,.pjImg3{
+    
+    width: 250px;
+}
+  
+
+.slot{
+    position: absolute;
+    width:150px ;
+  
+    opacity: 0.80;
+    bottom:10% ;
+    left: 20%;
+    
+}
+.twoD{
+    position: absolute;
+    width:140px ;
+    height: 85px;
+  
+   opacity: 0.80;
+   bottom:29% ;
+    left: 22%;
+    
+}
+.memoryCardGame{
+    position: absolute;
+    width:140px ;
+    height: 92px;
+  
+   opacity: 0.80;
+    bottom:25% ;
+    left: 22%;
+    
+}
+.shoppingCart{
+    position: absolute;
+    width:139px ;
+    height: 90px;
+  
+   opacity: 0.80;
+    bottom:25% ;
+    left: 22%;
+}
+
+.calendar{
+    position: absolute;
+    width:139px ;
+    height: 86px;
+  
+   opacity: 0.90;
+    bottom:28% ;
+    left: 22%;
+}
+
+
+.typingTest{
+    position: absolute;
+    width:139px ;
+    height: 90px;
+  
+   opacity: 0.90;
+    bottom:25% ;
+    left: 22%;
+}
+
+
+.slide_container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 1100px;
+   
+    border:3px solid #ede6d6;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+.slide_container .slides{
+  
+width: 100%;
+height: calc(100%-40px);
+position: relative;
+
+text-align: center;
+
+
+}
+
+.slide_container .slides div{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    position: absolute;
+    object-fit: cover;
+    background-color: #1E90FF;
+    }
+    /* Add this to your CSS */
+/* Add this to your CSS */
+.slides div {
+    height: 220px;
+    display: none;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.slides div.active {
+    display: block;
+    opacity: 1;
+}
+.open{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+.quote{
+    font-size: 22px;
+    font-weight: bold;
+    
+    color: white;
+}
+.person{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  .contact {
+    display: flex;
+    position: relative;
+    padding-left: 120px;
+    padding-right: 120px;
+   
+    width: 100%; /* Adjust the width as needed */
+   
+   
+    margin-top: 250px; /* Adjust the margin as needed */
+    margin-bottom: 30px;
+  }
+  
+  
+  .yourName_text,
+  .yourEmail_text {
+    margin-top: 10px; /* Adjust the margin as needed */
+  }
+  
+  
+  .yourName,
+  .yourEmail,
+  textarea {
+    height: 40px;
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  /* Additional styling for better appearance, adjust as needed */
+  .yourName,
+  .yourEmail,
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  textarea {
+    height: 150px;
+  }
+  .send{
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-left: 25%;
+
+  }
+ 
+  .contact_text{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  .contact_box{
+    width: 50%;
+    margin-right: 50px;
+  }
+  .mapContainer{
+   
+    
+   
+  }
+  .mapContainer div{
+    background-color: lightgray;
+   
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  iframe{
+    border: 5px solid blue;
+    
+  }
+
+  .intro{
+    line-height: 2;
+  }
+  .right{
+
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+  }
+  .menuBar{
+  display: flex;
+  justify-content: center;
+    box-shadow: 1px 1px 10px gray;
+  }
+.menu{
+    display: flex;
+  justify-content:space-around;
+  font-weight: bolder;
+ 
+}
