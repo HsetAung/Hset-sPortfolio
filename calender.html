@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calender.css" />
+    <script type="text/javascript" src="calender.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="title">CALENDAR</div>
+    </header>
+    <div class="container">
+      <input type="number" placeholder=" year" id="year" />
+      <input type="number" placeholder=" month" id="month" />
+
+      <button onclick="go()" class="show">Show</button>
+      <button onclick="today()" class="Today">Today</button>
+    </div>
+
+    <div class="calendar">
+      <div class="week weekday">
+        <div class="day dayname sun">SUN</div>
+        <div class="day dayname">MON</div>
+        <div class="day dayname">TUE</div>
+        <div class="day dayname">WED</div>
+        <div class="day dayname">THU</div>
+        <div class="day dayname">FRI</div>
+        <div class="day dayname sat">SAT</div>
+      </div>
+      <div class="week">
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+      </div>
+      <div class="week">
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+      </div>
+      <div class="week">
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+      </div>
+      <div class="week">
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+      </div>
+      <div class="week">
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+        <div class="day dates"></div>
+      </div>
+      <div class="week">
+        <div class="day dates extras"></div>
+        <div class="day dates extras"></div>
+        <div class="day extra"></div>
+        <div class="day extra"></div>
+        <div class="day extra"></div>
+        <div class="day extra"></div>
+        <div class="day extra"></div>
+      </div>
+
+      <div class="bottomContainer">
+        <input type="date" id="date_input" placeholder="select a date" />
+        <input type="text" placeholder=" Add Holiday Description" id="descri_input" />
+        <button onclick="addHoliday()" id="addHolidayBtn">Add Holiday</button>
+      </div>
+    </div>
+  </body>
+</html>
