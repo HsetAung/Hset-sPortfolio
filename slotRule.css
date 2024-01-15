@@ -1,0 +1,28 @@
+.item {
+    width: 420px;
+    height: 560px;
+}
+.slotlogo {
+    margin-top: 10px;
+}
+button{
+    margin-left: 15%;
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 767px) {
+    .item {
+        width: 53%;
+        height: 55%;
+        margin-top: 20%;
+    }
+
+    .item img{
+        width: 250px;
+        
+    }
+    button{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+  }
