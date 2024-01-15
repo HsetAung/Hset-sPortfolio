@@ -3,8 +3,19 @@ $(document).ready(function () {
   var currentHour = currentTime.getHours();
   var currentMinute = currentTime.getMinutes();
   var currentDayOfWeek = currentTime.getDay();
-//time limit for 12:00Am Section
+  //time limit for 12:00Am Section
+
   $(".twelveAM").click(function () {
+    window.location.href = "./lottery.html";
+  });
+  $(".fourPM").click(function () {
+    window.location.href = "./lottery.html";
+  });
+
+
+ 
+  /**
+  *  $(".twelveAM").click(function () {
     if (
       (currentHour >= 9 || (currentHour === 11 && currentMinute <= 50)) &&
       currentDayOfWeek >= 1 &&
@@ -34,4 +45,5 @@ $(document).ready(function () {
       );
     }
   });
+  */
 });
