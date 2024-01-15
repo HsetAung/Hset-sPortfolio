@@ -1,0 +1,59 @@
+
+.item {
+    width: 430px;
+    height: 520px;
+}
+
+.thai2dlogo {
+    margin-top: 10px;
+    margin-left: 100px;
+}
+button{
+    margin-left: 70px;
+    width: 100px;
+}
+a{
+    font-size: 12px;
+}
+.item img{
+    width: 200px;
+    height: 120px;
+    
+}
+.description{
+    font-size: 14px;
+    padding: 20px;
+    padding-top: 0px;
+}
+/* Media Query for Mobile View */
+@media screen and (max-width: 767px) {
+    .item {
+        width: 60%;
+        height: 55%;
+        margin-top: 20%;
+      
+    }
+
+    .item img{
+        width: 100px;
+        height: 70px;
+      
+      
+        
+    }
+    button{
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 70px;
+    }
+    .description{
+        font-size: 10px;
+        padding: 20px;
+        padding-top: 0px;
+    }
+    a{
+        font-size: 10px;
+       
+    }
+  }
