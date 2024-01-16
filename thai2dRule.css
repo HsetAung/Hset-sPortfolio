@@ -1,0 +1,83 @@
+
+
+.container{
+    align-items: center;
+    text-align: center;
+}
+
+.item {
+    width: 430px;
+    height: 520px;
+    align-items: center;
+   
+}
+
+.thai2dlogo {
+    margin-top: 10px;
+   
+}
+button{
+ 
+    width: 100px;
+}
+a{
+    font-size: 12px;
+}
+.item img{
+    width: 200px;
+    height: 120px;
+    
+}
+.description{
+    font-size: 14px;
+    padding: 20px;
+    padding-top: 0px;
+    text-align:left;
+}
+/* Media Query for Mobile View */
+@media screen and (max-width: 767px) {
+    body{
+    padding-top: 25%;
+      
+    }
+
+   
+    .item {
+        width: 75%;
+        height: 55%;
+        margin-top: 20%;
+        align-items: center;
+      
+    }
+
+    .item img{
+        width: 100px;
+        height: 70px;
+        align-items: center;
+        text-align: center;
+      
+      
+        
+    }
+    button{
+      
+        margin-bottom: 20px;
+        width:15%;
+        height: 25px;
+        margin: 10px;
+       
+    }
+    .description{
+        font-size: 10px;
+        padding: 20px;
+        padding-top: 0px;
+        text-align:left;
+    }
+    a{
+        font-size: 8px;
+        text-align: center;
+        align-items: center;
+      
+       
+    }
+  }
