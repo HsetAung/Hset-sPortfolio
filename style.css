@@ -421,11 +421,11 @@ body{
   background-image: none;
   background-color: black;
  align-items: center;
- padding-top: 20%;
+ padding-top: 10%;
 }
   .bigcontainer {
-    width: 80%; /* Adjust the width for smaller screens */
-    margin-left: 20%; /* Adjust the margin for smaller screens */
+    width: 100%; /* Adjust the width for smaller screens */
+    /* Adjust the margin for smaller screens */
     border-radius: 10px;
    
   }
