@@ -445,10 +445,11 @@ body{
   }
 
   .to_Bet {
-    margin-left: 42%;; /* Adjust margin for smaller screens */
+    margin-left: 40%;; /* Adjust margin for smaller screens */
     width: 150px;
     height: 30px;
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   #result-12am,
@@ -460,6 +461,7 @@ body{
   padding: 10px;
   border-radius: 10px;
   margin-left: 5%;
+  font-size: 11px;
 }
 
 #cart_result-12am,
@@ -470,6 +472,7 @@ body{
   text-align: center;
   padding: 10px;
   border-radius: 8px;
+  font-size: 11px;
 }
 
 .box {
